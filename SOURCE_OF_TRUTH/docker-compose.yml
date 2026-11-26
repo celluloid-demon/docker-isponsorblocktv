@@ -1,0 +1,10 @@
+services:
+    iSponsorBlockTV:
+        image: ghcr.io/dmunozv04/isponsorblocktv
+        container_name: iSponsorBlockTV
+        restart: unless-stopped
+        network_mode: host
+        volumes:
+        - /PATH_TO_YOUR_DATA_DIR:/app/data #enter the same pathway as you used for your configurator in step 1
+
+# Source: https://github.com/dmunozv04/iSponsorBlockTV/wiki/Installation#option-1-using-docker-compose
